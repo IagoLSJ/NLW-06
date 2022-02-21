@@ -1,10 +1,5 @@
-import express from "express";
-import router from "./router";
-const app = express();
-app.use(router)
+import { serverHttp } from "./app"
 
-
-
-app.listen(3000, ()=>{
+serverHttp.listen(3000, () => {
     console.log("Rodando na porta 3000")
 })
